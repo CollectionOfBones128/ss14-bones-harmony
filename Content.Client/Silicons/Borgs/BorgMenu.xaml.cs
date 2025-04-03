@@ -55,7 +55,7 @@ public sealed partial class BorgMenu : FancyWindow
             NameIdentifierLabel.Text = nameIdentifierComponent.FullIdentifier;
 
             var fullName = _entity.GetComponent<MetaDataComponent>(Entity).EntityName;
-             // Harmony Chage -- port of Frontier borg name loadouts -- Frontier: prevent exceptions
+             // Harmony Change -- port of Frontier borg name loadouts -- Frontier: prevent exceptions
             if (fullName.Contains(nameIdentifierComponent.FullIdentifier))
                 NameLineEdit.Text = fullName.Substring(0, fullName.Length - nameIdentifierComponent.FullIdentifier.Length - 1);
             else
