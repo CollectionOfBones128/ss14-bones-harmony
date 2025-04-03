@@ -79,7 +79,7 @@ public abstract class SharedStationSpawningSystem : EntitySystem
             name = Loc.GetString(_random.Pick(nameData.Values));
         }
 
-        // Frontier: apply name modifiers
+        // Harmony Chage -- port of Frontier borg name loadouts -- Frontier: apply name modifiers
 
 
 
