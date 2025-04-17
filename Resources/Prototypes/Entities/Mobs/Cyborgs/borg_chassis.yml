@@ -219,3 +219,16 @@
     interactFailureString: petting-failure-derelict-cyborg
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg
+
+# Harmony Change Start
+
+# Adds CargoBorg
+- type: entity
+  id: BorgChassisHauling
+  parent: BorgChassisSelectable
+  name: cargo cyborg
+  components:
+  - type: BorgSwitchableType
+    selectedBorgType: hauling
+
+# Harmony Change End

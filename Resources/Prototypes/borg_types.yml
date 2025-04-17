@@ -217,3 +217,47 @@
   # Pet
   petSuccessString: petting-success-service-cyborg
   petFailureString: petting-failure-service-cyborg
+
+  # Harmony Change Start
+
+  # Cargo Borg - Hauling Borg based on the SupplyBot
+- type: borgType
+  id: hauling
+
+  # Description
+  dummyPrototype: BorgChassisHauling
+
+  # Functional
+  extraModuleCount: 4
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleCargo
+    - BorgModuleCargoHauler # So Mining Borgs don't get Hauler modules
+
+  defaultModules:
+  # - BorgModuleForklift
+  - BorgModuleAppraisal # More to be added later
+  - BorgModuleTool
+
+  radioChannels:
+  - Supply
+  - Science
+
+  # Visual
+  inventoryTemplateId: borgBox
+  spriteBodyState: cargo
+  spriteBodyMovementState: cargo_moving
+  spriteHasMindState: cargo_e
+  spriteNoMindState: cargo_e_r
+  spriteToggleLightState: cargo_l
+
+  # Pet
+  petSuccessString: petting-success-cargo-cyborg
+  petFailureString: petting-failure-cargo-cyborg
+
+  # Don't give an Inventory to CargoBorg to mimic old function of Supplybot, it breaks everything somehow.
+  # If you can figure out a way to add it without breaking everything, go ahead!
+  # Seriously. It broke their laws, their UI panel, I think it even deleted their brain when I tried it.
+
+# Harmony Change End

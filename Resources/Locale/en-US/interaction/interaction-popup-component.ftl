@@ -89,6 +89,12 @@ petting-failure-station-ai = You reach out to pet {THE($target)}, but {SUBJECT($
 
 petting-success-station-ai-others = { CAPITALIZE(THE($user)) } pets {THE($target)} on {POSS-ADJ($target)} cold, square screen.
 
+## Harmony Silicon Petting
+
+petting-success-cargo-cyborg = You pet {THE($target)} on the side of {POSS-ADJ($target)} storage
+
+petting-failure-cargo-cyborg = You reach out to pet {THE($target)}, but {SUBJECT($target)} {CONJUGATE-BE($target)} busy hauling items!
+
 ## Rattling fences
 
 fence-rattle-success = *rattle*

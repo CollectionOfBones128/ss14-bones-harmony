@@ -61,4 +61,10 @@ borg-type-service-name = Service
 borg-type-service-desc = Help out with a wide range of crew services, ranging from serving snacks and drinks to botany to entertainment.
 borg-type-service-transponder = service cyborg
 
+## Harmony Borg Type Information
+
+borg-type-hauling-name = Cargo
+borg-type-hauling-desc = Pick up crates, get items put in your storage box, and deliver materials to departments.
+borg-type-hauling-transponder = cargo cyborg
+
 
