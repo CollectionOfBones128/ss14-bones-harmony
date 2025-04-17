@@ -1,0 +1,17 @@
+#Quartermasters Hardsuit
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ClothingHeadHelmetHardsuitQM
+  name: quartermasters hardsuit helmet
+  description: A salvaged pirate helmet generously donated to NanoTrasen, retrofitted for the Quartermaster.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hardsuits/luxury.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hardsuits/luxury.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: PointLight
+    radius: 7
+    energy: 3

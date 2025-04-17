@@ -1,0 +1,31 @@
+#Quartermaster's Hardsuit
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseCommandContraband]
+  id: ClothingOuterHardsuitQM
+  name: quartermasters hardsuit
+  description: A salvaged pirate hardsuit generously donated to NanoTrasen, retrofitted for the Quartermaster.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Hardsuits/luxury.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Hardsuits/luxury.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients: #Meant to be the average of the salv roundstart and the goliath suit, as it isn't upgradeable.
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.6
+        Heat: 0.9
+        Radiation: 0.3 #salv is supposed to have radiation hazards in the future
+        Caustic: 0.75
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitQM

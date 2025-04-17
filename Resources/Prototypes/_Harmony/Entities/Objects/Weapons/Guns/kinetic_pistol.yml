@@ -1,0 +1,59 @@
+#gun base
+- type: entity
+  name: BaseWeaponKineticSidearm
+  parent: BaseItem
+  id: BaseWeaponKineticSidearm
+  description: A rooty tooty point and shooty, now kinetic.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi
+    state: icon
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+    - Belt
+  - type: Gun
+    fireRate: 0.75
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+  - type: AmmoCounter
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.AmmoVisuals.HasAmmo:
+        empty-icon:
+          True: { visible: False }
+          False: { visible: True }
+        #todo: add other 'empty' animations
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 5 # should be recharging after all three shots are done and no sooner.
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+  - type: BasicEntityAmmoProvider
+    proto: BulletKinetic
+    capacity: 3
+    count: 3
+  - type: UseDelay
+    delay: 1
+
+
+#gun
+- type: entity
+  name: Quartermaster's Kinetic Revolver
+  parent: [BaseWeaponKineticSidearm, BaseCommandContraband]
+  id: WeaponQMKineticSidearm
+  description: The Quartermaster's retrofitted Pirate Revolver that fires low-damage kinetic bolts at a short range.

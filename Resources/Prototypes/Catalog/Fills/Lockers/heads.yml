@@ -19,6 +19,8 @@
     - id: RubberStampQm
     - id: AstroNavCartridge
     - id: MailTeleporterMachineCircuitboard
+    - id: ClothingOuterHardsuitQM # Harmony Change, adds a hardsuit for QM
+    - id: WeaponQMKineticSidearm # Harmony Change, adds a unique PKA for QM
 
 - type: entity
   id: LockerQuarterMasterFilled
