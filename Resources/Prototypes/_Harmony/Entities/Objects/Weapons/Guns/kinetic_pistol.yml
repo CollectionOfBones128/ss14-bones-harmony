@@ -40,7 +40,7 @@
           False: { visible: True }
         #todo: add other 'empty' animations
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 5 # should be recharging after all three shots are done and no sooner.
+    rechargeCooldown: 7 # should be recharging after all three shots are done and no sooner. Should leave you vunerable after magdumping
     rechargeSound:
       path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: BasicEntityAmmoProvider
