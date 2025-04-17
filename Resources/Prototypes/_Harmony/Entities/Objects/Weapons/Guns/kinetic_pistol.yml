@@ -24,7 +24,7 @@
     - suitStorage
     - Belt
   - type: Gun
-    fireRate: 0.75
+    fireRate: 0.5
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -40,13 +40,13 @@
           False: { visible: True }
         #todo: add other 'empty' animations
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 7 # should be recharging after all three shots are done and no sooner. Should leave you vunerable after magdumping
+    rechargeCooldown: 0.75
     rechargeSound:
       path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: BasicEntityAmmoProvider
     proto: BulletKinetic
-    capacity: 3
-    count: 3
+    capacity: 1
+    count: 31
   - type: UseDelay
     delay: 1
 
