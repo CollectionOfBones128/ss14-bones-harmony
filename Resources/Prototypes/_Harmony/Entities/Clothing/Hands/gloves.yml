@@ -1,79 +1,75 @@
-# Knuckledusters
 - type: entity
   parent: [ClothingHandsBase, BaseMinorContraband]
   id: ClothingHandsKnuckledusters
-  name: knuckle dusters
-  description: punch once, punch hard.
+  name: knuckledusters
+  description: Wearing these gives an extra bite to your punches.
   components:
   - type: Sprite
     sprite: _Harmony/Clothing/Hands/Gloves/knuckledusters.rsi
     state: knuckledusters
   - type: Clothing
     sprite: _Harmony/Clothing/Hands/Gloves/knuckledusters.rsi
-  - type: Fiber # should be "metallic flecks", will get to that.
-     fiberColor: fibers-black
   - type: MeleeWeapon
-    autoAttack: true
-    attackRate: 4
+    attackRate: 1
     damage:
       types:
-       Blunt: 8
+       Blunt: 10 # Should be Tider friendly
     soundHit:
       collection: Punch
     animation: WeaponArcFist
     mustBeEquippedToUse: true
-  tags:
-    - WhitelistChameleon
+  - type: Fiber
+    fiberMaterial: fibers-leather
+    fiberColor: fibers-blue
 
-# QM Knuckledusters
 - type: entity
- parent: [ClothingHandsKnuckledusters, BaseCommandContraband]
- id: ClothingHandsKnucklesQM
- name: qm's knuckledusters
- description: crack open ores with these 24 karat beauties.
- components:
+  parent: [ClothingHandsBase, BaseCommandContraband]
+  id: ClothingHandsKnuckledustersQM
+  name: qm's knuckledusters
+  description: crack open ores with these 24 karat beauties.
+  components:
   - type: Sprite
     sprite: _Harmony/Clothing/Hands/Gloves/knuckledusters.rsi
     state: knuckledusters
   - type: Clothing
     sprite: _Harmony/Clothing/Hands/Gloves/knuckledusters.rsi
   - type: MeleeWeapon
-    autoAttack: true
     attackRate: 1.5
-   damage:
-     types:
+    damage:
+      types:
        Blunt: 10
-       Structural: 20
-   soundHit:
-    collection: Punch
-   animation: WeaponArcFist
-   mustBeEquippedToUse: true
-  - type: Fiber # should be "metallic flecks", will get to that.
-     fiberColor: fibers-black
+       Structural: 30
+    soundHit:
+      collection: Punch
+    animation: WeaponArcFist
+    mustBeEquippedToUse: true
+  - type: Fiber
+    fiberMaterial: fibers-leather
+    fiberColor: fibers-blue
 
 - type: entity
- parent: [ClothingHandsBase, BaseSyndicateContraband]
- id: ClothingHandsKnucklesSyndie
- name: leadened knuckledusters
- description: show them your might, capiche?.
- components:
+  parent: [ClothingHandsBase, BaseSyndicateContraband]
+  id: ClothingHandsKnuckledustersSyndi
+  name: leaded knuckledusters
+  description: These gloves allow you to punch incredibly hard.
+  components:
   - type: Sprite
     sprite: _Harmony/Clothing/Hands/Gloves/knuckledusters.rsi
     state: knuckledusters
   - type: Clothing
     sprite: _Harmony/Clothing/Hands/Gloves/knuckledusters.rsi
- - type: MeleeWeapon
-   autoAttack: true
-   attackRate: 1.5
-   damage:
-     types:
-       Blunt: 12
-   soundHit:
-     collection: Punch
-   animation: WeaponArcFist
-   mustBeEquippedToUse: true
-- type: Fiber # should be "metallic flecks", will get to that.
-   fiberColor: fibers-black
+  - type: MeleeWeapon
+    attackRate: 1.5
+    damage:
+      types:
+       Blunt: 12 # Don't want these to overshadow the Northstars
+    soundHit:
+      collection: Punch
+    animation: WeaponArcFist
+    mustBeEquippedToUse: true
+  - type: Fiber
+    fiberMaterial: fibers-leather
+    fiberColor: fibers-blue
 
 - type: entity
   parent: ClothingHandsGlovesLatex
