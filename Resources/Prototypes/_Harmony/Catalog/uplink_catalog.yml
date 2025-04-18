@@ -1,4 +1,17 @@
 # Guns
+- type: listing
+  id: UplinkGlovesKnuckledusters
+  name: uplink-knuckledusters-name
+  description: uplink-knuckledusters-desc
+  productEntity: ClothingHandsKnuckledustersSyndi
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 6
+  categories:
+  - UplinkWeaponry
+
 # Explosives
 - type: listing
   id: UplinkPizzaBomb
