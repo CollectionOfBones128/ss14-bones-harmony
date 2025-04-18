@@ -2,7 +2,7 @@
   parent: [ClothingHandsBase, BaseMinorContraband]
   id: ClothingHandsKnuckledusters
   name: knuckledusters
-  description: Wearing these gives an extra bite to your punches.
+  description: Wearing these gives an extra impact to your punches.
   components:
   - type: Sprite
     sprite: _Harmony/Clothing/Hands/Gloves/knuckledusters.rsi
@@ -37,8 +37,8 @@
     attackRate: 1.5
     damage:
       types:
-       Blunt: 10
-       Structural: 30
+       Blunt: 10 # should be equal to or better than tider knuckles
+       Structural: 30 # makes them a viable pickaxe
     soundHit:
       collection: Punch
     animation: WeaponArcFist
@@ -50,8 +50,8 @@
 - type: entity
   parent: [ClothingHandsBase, BaseSyndicateContraband]
   id: ClothingHandsKnuckledustersSyndi
-  name: leaded knuckledusters
-  description: These gloves allow you to punch incredibly hard.
+  name: spiked knuckledusters
+  description: red syndicate knuckledusters with spikes
   components:
   - type: Sprite
     sprite: _Harmony/Clothing/Hands/Gloves/knuckledusters.rsi
@@ -62,14 +62,15 @@
     attackRate: 1.5
     damage:
       types:
-       Blunt: 12 # Don't want these to overshadow the Northstars
+       Blunt: 7 # Don't want these to overshadow the Northstars; sacrifices some damage over tider for the spikes
+       Piercing: 7 # Makes them less gibbing weapons and more varied weapons while still having good dps
     soundHit:
       collection: Punch
     animation: WeaponArcFist
     mustBeEquippedToUse: true
   - type: Fiber
     fiberMaterial: fibers-metallic
-    fiberColor: fibers-silver
+    fiberColor: fibers-red
 
 - type: entity
   parent: ClothingHandsGlovesLatex

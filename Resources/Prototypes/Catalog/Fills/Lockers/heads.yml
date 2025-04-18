@@ -19,6 +19,7 @@
     - id: RubberStampQm
     - id: AstroNavCartridge
     - id: MailTeleporterMachineCircuitboard
+    - id: ClothingHandsKnuckledustersQM # Harmony change, adds a unique pair of knuckledusters for QM that work for mining
 
 - type: entity
   id: LockerQuarterMasterFilled

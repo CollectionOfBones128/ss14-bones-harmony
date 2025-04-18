@@ -13,5 +13,5 @@ uplink-cluster-weh-desc = Scatters 10 lizard plushies in a circle after a short 
 uplink-hyposhell-name = Box of hyposhells
 uplink-hyposhell-desc = A box containing four hyposhells, shotgun shells that can hold 7u of any chemical.
 
-uplink-knuckledusters-name = Leaded knuckledusters
-uplink-knuckledusters-desc = A pair of knuckledusters, with added weight for a stronger punch.
+uplink-knuckledusters-name = Spiked Knuckledusters
+uplink-knuckledusters-desc = Add a little bite to your punch with Gorlex brand interpesonal diplomacy. These knuckledusters improve your punches impact while the spikes add more pain to the mix.
