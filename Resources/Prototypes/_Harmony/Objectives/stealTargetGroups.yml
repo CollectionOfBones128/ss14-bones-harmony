@@ -1,0 +1,15 @@
+# Traitor single items
+
+- type: stealTargetGroup
+  id: WeaponQMKineticSidearm
+  name: steal-target-groups-weapon-kinetic-pistol
+  sprite:
+    sprite: _Harmony/Objects/Weapons/Guns/Kinetic/kinetic_pistol.rsi
+    state: icon
+
+- type: stealTargetGroup
+  id: ClothingOuterHardsuitQM
+  name: steal-target-groups-clothing-outer-hardsuit-qm
+  sprite:
+    sprite: _Harmony/Clothing/OuterClothing/Hardsuits/qmsuit.rsi
+    state: icon

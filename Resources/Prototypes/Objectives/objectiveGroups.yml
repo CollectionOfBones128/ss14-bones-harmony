@@ -21,6 +21,8 @@
     CaptainJetpackStealObjective: 0.5
     HandTeleporterStealObjective: 0.5
     EnergyShotgunStealObjective: 0.5
+    KineticPistolStealObjective: 0.5 # Harmony Item
+    QMHardsuitStealObjective: 1 # Harmony Item
 
 - type: weightedRandom
   id: TraitorObjectiveGroupKill

@@ -56,6 +56,9 @@
 #gun
 - type: entity
   name: Quartermaster's Kinetic Revolver
-  parent: [BaseWeaponKineticSidearm, BaseCommandContraband]
+  parent: [BaseWeaponKineticSidearm, BaseGrandTheftContraband]
   id: WeaponQMKineticSidearm
   description: The Quartermaster's retrofitted Pirate Revolver that fires low-damage kinetic bolts at a short range. Its internals are too compact, so it can't take any modkits.
+  components:
+  - type: StealTarget
+    stealGroup: WeaponQMKineticSidearm

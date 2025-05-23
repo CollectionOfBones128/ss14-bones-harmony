@@ -1,6 +1,6 @@
 #Quartermaster's Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseCommandContraband]
+  parent: [ClothingOuterHardsuitBase, BaseGrandTheftContraband]
   id: ClothingOuterHardsuitQM
   name: quartermasters hardsuit
   description: A salvaged pirate hardsuit generously donated to NanoTrasen, retrofitted for the Quartermaster.
@@ -29,3 +29,6 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitQM
+  - type: StealTarget
+    stealGroup: ClothingOuterHardsuitQM
+
