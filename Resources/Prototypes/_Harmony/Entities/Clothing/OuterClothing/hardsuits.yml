@@ -13,19 +13,19 @@
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
-    damageCoefficient: 0.5
+    damageCoefficient: 0.5 # stepping on a landmine saving a salv would suck, but being unnecessarily resistant to a clake or penbomb would too
   - type: Armor
     modifiers:
-      coefficients: #Meant to be the average of the salv roundstart and the goliath suit, as it isn't upgradeable.
-        Blunt: 0.75
-        Slash: 0.75
-        Piercing: 0.85
+      coefficients: # Better than spationaut, worse than mining, slower than luxury and goliath
+        Blunt: 0.85
+        Slash: 0.80
+        Piercing: 0.95 # shooting the qm is still an option
         Heat: 0.9
-        Radiation: 0.3 #salv is supposed to have radiation hazards in the future
-        Caustic: 0.75
-  - type: ClothingSpeedModifier
-    walkModifier: 0.85
-    sprintModifier: 0.85
+        Radiation: 0.3 # salv is supposed to have radiation hazards in the future
+        Caustic: 0.80
+  - type: ClothingSpeedModifier # make qm not want to use it casually on station
+    walkModifier: 0.75
+    sprintModifier: 0.75
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitQM
