@@ -26,6 +26,8 @@
   - type: Gun
     fireRate: 0.5
     selectedMode: SemiAuto
+    minAngle: 1
+    maxAngle: 2
     availableModes:
     - SemiAuto
     soundGunshot:
@@ -56,4 +58,4 @@
   name: Quartermaster's Kinetic Revolver
   parent: [BaseWeaponKineticSidearm, BaseCommandContraband]
   id: WeaponQMKineticSidearm
-  description: The Quartermaster's retrofitted Pirate Revolver that fires low-damage kinetic bolts at a short range.
+  description: The Quartermaster's retrofitted Pirate Revolver that fires low-damage kinetic bolts at a short range. Its internals are too compact, so it can't take any modkits.
