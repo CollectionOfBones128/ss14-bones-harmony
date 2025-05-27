@@ -19,6 +19,7 @@
     - id: AstroNavCartridge
     - id: ClothingHandsKnuckleDustersQM
     - id: MailTeleporterMachineCircuitboard
+    - id: WeaponQMKineticSidearm # Harmony Item
 
 - type: entity
   id: LockerQuarterMasterFilled
