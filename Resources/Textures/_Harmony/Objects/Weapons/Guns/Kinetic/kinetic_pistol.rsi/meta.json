@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken/modified from https://github.com/space-wizards/space-station-14/pull/17219, https://github.com/space-wizards/space-station-14/pull/12081, https://github.com/space-wizards/space-station-14/pull/26152, https://github.com/space-wizards/space-station-14/pull/14032, and https://github.com/space-wizards/space-station-14/pull/11481",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+    "states": [
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "icon"
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "equipped-BELT",
+            "directions": 4
+        },
+		{
+            "name": "equipped-SUITSTORAGE",
+            "directions": 4
+        }
+    ]
+}
