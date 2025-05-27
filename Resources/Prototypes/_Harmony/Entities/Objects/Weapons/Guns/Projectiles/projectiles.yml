@@ -153,7 +153,7 @@
 
 - type: entity
   id: BulletKineticBreach # A weaker PKA bullet used for the qm gun
-  name: kinetic bolt
+  name: kinetic breaching bolt
   parent: BulletKinetic
   categories: [ HideSpawnMenu ]
   description: Not too bad, but you still don't want to get hit by it.
