@@ -1,0 +1,1 @@
+steal-target-groups-clothing-outer-hardsuit-qm = antique salvage hardsuit

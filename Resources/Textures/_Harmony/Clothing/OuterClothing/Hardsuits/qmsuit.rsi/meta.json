@@ -1,0 +1,32 @@
+
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Base taken from commit https://github.com/space-wizards/space-station-14/pull/8458/commits/7c1f6939b35c80a03894243e6f93ee155c803995 and modified by GhastlyGlimmer",
+
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "equipped-OUTERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "equipped-OUTERCLOTHING-vox",
+      "directions": 4
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    }
+  ]
+}
