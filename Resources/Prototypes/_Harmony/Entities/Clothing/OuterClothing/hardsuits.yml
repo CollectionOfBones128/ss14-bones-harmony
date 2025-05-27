@@ -13,7 +13,7 @@
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
-    damageCoefficient: 0.5 # stepping on a landmine saving a salv would suck, but being unnecessarily resistant to a clake or penbomb would too
+    damageCoefficient: 0.65 # stepping on a landmine saving a salv would suck, but being unnecessarily resistant to a clake or penbomb would too
   - type: Armor
     modifiers:
       coefficients: # Better than spationaut, worse than mining, slower than luxury and goliath
@@ -31,4 +31,3 @@
     clothingPrototype: ClothingHeadHelmetHardsuitQM
   - type: StealTarget
     stealGroup: ClothingOuterHardsuitQM
-
