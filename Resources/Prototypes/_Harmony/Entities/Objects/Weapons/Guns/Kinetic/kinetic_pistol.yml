@@ -43,7 +43,7 @@
     rechargeSound:
       path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: BasicEntityAmmoProvider
-    proto: BulletKineticBreach
+    proto: BulletKinetic
     capacity: 1
     count: 1
   - type: UseDelay
@@ -52,10 +52,7 @@
 
 #gun
 - type: entity
-  name: Quartermaster's Kinetic Revolver
-  parent: [BaseWeaponKineticSidearm, BaseCommandContraband]
-  id: WeaponQMKineticSidearm
-  description: The Quartermaster's retrofitted Pirate Revolver that fires very low-damage kinetic bolts at a short range. Its internals are too compact, so it can't take any modkits.
-  # components:
-  # - type: StealTarget
-  #  stealGroup: WeaponQMKineticSidearm
+  name: Luxury Kinetic Revolver
+  parent: [BaseWeaponKineticSidearm, BaseCargoContraband]
+  id: WeaponLuxuryKineticSidearm
+  description: A retrofitted Pirate Revolver that fires low-damage kinetic bolts at a short range. Its internals are too compact, so it can't take any modkits.

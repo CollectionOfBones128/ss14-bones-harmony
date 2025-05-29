@@ -150,21 +150,3 @@
       types:
         Heat: 10
         Radiation: 6
-
-- type: entity
-  id: BulletKineticBreach # A weaker PKA bullet used for the qm gun
-  name: kinetic breaching bolt
-  parent: BulletKinetic
-  categories: [ HideSpawnMenu ]
-  description: Not too bad, but you still don't want to get hit by it.
-  components:
-  - type: Projectile
-    impactEffect: BulletImpactEffectKinetic
-    damage:
-      types:
-        Blunt: 12 # 4 taps carp, roughly 9 taps unarmored people
-        Structural: 75 # for some reason this three taps secure crates and not one taps
-  # Short lifespan
-  - type: TimedDespawn
-    lifetime: 0.185 # roughly 4.5 tiles
-  - type: GatheringProjectile
