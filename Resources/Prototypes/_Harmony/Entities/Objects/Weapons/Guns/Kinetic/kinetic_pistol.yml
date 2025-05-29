@@ -52,7 +52,7 @@
 
 #gun
 - type: entity
-  name: Luxury Kinetic Revolver
+  name: luxury kinetic revolver
   parent: [BaseWeaponKineticSidearm, BaseCargoContraband]
   id: WeaponLuxuryKineticSidearm
   description: A retrofitted Pirate Revolver that fires low-damage kinetic bolts at a short range. Its internals are too compact, so it can't take any modkits.
