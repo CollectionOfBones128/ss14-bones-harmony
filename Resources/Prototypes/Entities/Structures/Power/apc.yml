@@ -143,6 +143,10 @@
     priority: 1
   - type: StaticPrice
     price: 500
+  # Harmony Change Start, IPC Sippy Cup
+  - type: BatteryDrinkerSource # EE IPCs
+    maxAmount: 10000
+  # Harmony Change End
   - type: GuideHelp
     guides:
     - VoltageNetworks
@@ -213,6 +217,10 @@
   - type: Battery
     maxCharge: 50000
     startingCharge: 50000
+  # Harmony Change Start, IPC Sippy Cup
+  - type: BatteryDrinkerSource # EE IPCs
+    maxAmount: 5000
+  # Harmony Change End
 
 - type: entity
   parent: BaseAPC
@@ -222,6 +230,10 @@
   - type: Battery
     maxCharge: 100000
     startingCharge: 100000
+  # Harmony Change Start, IPC Sippy Cup
+  - type: BatteryDrinkerSource # EE IPCs
+    maxAmount: 12000
+  # Harmony Change End
 
 - type: entity
   parent: BaseAPC
@@ -231,6 +243,10 @@
   - type: Battery
     maxCharge: 150000
     startingCharge: 150000
+  # Harmony Change Start, IPC Sippy Cup
+  - type: BatteryDrinkerSource # EE IPCs
+    maxAmount: 18000
+  # Harmony Change End
 
 - type: entity
   parent: BaseAPC
@@ -240,3 +256,7 @@
   - type: Battery
     maxCharge: 200000
     startingCharge: 200000
+  # Harmony Change Start, IPC Sippy Cup
+  - type: BatteryDrinkerSource # EE IPCs
+    maxAmount: 26000
+  # Harmony Change End
