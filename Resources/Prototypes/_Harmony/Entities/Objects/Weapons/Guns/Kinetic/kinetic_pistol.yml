@@ -1,6 +1,6 @@
 #gun base
 - type: entity
-  name: BaseWeaponKineticSidearm
+  name: BaseWeaponKineticSidearm # Defined to remove wieldable and to give room for further differentiation from the PKA
   parent: BaseItem
   id: BaseWeaponKineticSidearm
   description: A rooty tooty point and shooty, now kinetic.
@@ -54,5 +54,5 @@
 - type: entity
   name: luxury kinetic revolver
   parent: [BaseWeaponKineticSidearm, BaseCargoContraband]
-  id: WeaponLuxuryKineticSidearm
+  id: WeaponKineticSidearmLuxury
   description: A retrofitted Pirate Revolver that fires low-damage kinetic bolts at a short range. Its internals are too compact, so it can't take any modkits.
