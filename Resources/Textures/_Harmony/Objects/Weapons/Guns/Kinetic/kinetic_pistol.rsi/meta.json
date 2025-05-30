@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken/modified from https://github.com/space-wizards/space-station-14/pull/17219, https://github.com/space-wizards/space-station-14/pull/12081, https://github.com/space-wizards/space-station-14/pull/26152, https://github.com/space-wizards/space-station-14/pull/14032, and https://github.com/space-wizards/space-station-14/pull/11481",
+  "copyright": "Recolour by CollectionOfBones128 of the sprites from https://github.com/ss14-harmony/ss14-harmony/commit/8da57fb16a6d378f4505d52168f0458be3be9615, https://github.com/ss14-harmony/ss14-harmony/commit/7eec71dcfc25ff907e62a72e0f50c79a173f97fb, and https://github.com/ss14-harmony/ss14-harmony/commit/0d3a22cffaba338a3b309aa9e3e09a8aa54508b3"
   "size": {
     "x": 32,
     "y": 32
