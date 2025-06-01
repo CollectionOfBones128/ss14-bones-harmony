@@ -11,6 +11,7 @@
     - Reptilian
     - SlimePerson
     - Vox
+    - IPC # Harmony Change
 
 - type: guideEntry
   id: Arachnid
@@ -51,3 +52,10 @@
   id: Vox
   name: species-name-vox
   text: "/ServerInfo/Guidebook/Mobs/Vox.xml"
+
+# Harmony Change Start
+
+- type: guideEntry
+  id: IPC
+  name: species-name-ipc
+  text: "/ServerInfo/_Harmony/Guidebook/Mobs/IPCs.xml"
