@@ -83,8 +83,8 @@
 - type: entity
   parent: BaseDecoy
   id: BalloonAgent
-  name: corpsman balloon
-  description: Upon closer inspection, this Syndicate corpsman is actually a balloon.
+  name: combat medic balloon # Harmony Change - Nukie Corpsman > Nuke Combat Medic
+  description: Upon closer inspection, this Syndicate combat medic is actually a balloon. # Harmony Change - Nukie Corpsman > Nuke Combat Medic
   components:
   - type: Sprite
     sprite: Objects/Tools/Decoys/agent_decoy.rsi
