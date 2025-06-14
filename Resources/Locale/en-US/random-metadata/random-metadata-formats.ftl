@@ -12,7 +12,7 @@ name-format-dragon = {$part0} {$part1}
 
 # "<title> <name>"
 name-format-nukie-generic = {$part0} {$part1}
-## Harmony Change - Nukie Corpsman > Nuke Combat Medic
+## Harmony Change - Nukie Corpsman > Nukie Combat Medic
 name-format-nukie-agent = Combat Medic {$part0}
 name-format-nukie-commander = Commander {$part0}
 name-format-nukie-operator = Operator {$part0}
