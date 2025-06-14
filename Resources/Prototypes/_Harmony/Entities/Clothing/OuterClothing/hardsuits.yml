@@ -13,16 +13,16 @@
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
-    damageCoefficient: 0.65 # stepping on a landmine saving a salv would suck, but being unnecessarily resistant to a clake or penbomb would too
+    damageCoefficient: 0.60 # stepping on a landmine saving a salv would suck, but being unnecessarily resistant to a clake or penbomb would too
   - type: Armor
     modifiers:
       coefficients: # Better than spationaut, worse than mining, slower than luxury and goliath
-        Blunt: 0.85
+        Blunt: 0.80
         Slash: 0.80
-        Piercing: 0.85 # on par with other non-sec protective hardsuits
+        Piercing: 0.80 # on par with other non-sec protective hardsuits
         Heat: 0.9
-        Radiation: 0.3 # salv is supposed to have radiation hazards in the future
-        Caustic: 0.80
+        Radiation: 0.4 # salv is supposed to have radiation hazards in the future
+        Caustic: 0.70
   - type: ClothingSpeedModifier # make qm not want to use it casually on station
     walkModifier: 0.75
     sprintModifier: 0.75
