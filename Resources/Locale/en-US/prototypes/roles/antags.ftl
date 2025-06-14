@@ -27,6 +27,7 @@ roles-antag-suspicion-suspect-objective = Kill the innocents.
 roles-antag-nuclear-operative-commander-name = Nuclear operative commander
 roles-antag-nuclear-operative-commander-objective = Lead your team to the destruction of the station.
 
+## Harmony Change - Nukie Corpsman > Nuke Combat Medic
 roles-antag-nuclear-operative-agent-name = Nuclear operative combat medic
 roles-antag-nuclear-operative-agent-objective = Like default operative, the team's treatment will have priority.
 
