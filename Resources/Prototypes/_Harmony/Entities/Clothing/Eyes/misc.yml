@@ -1,7 +1,18 @@
 - type: entity
-  parent: [ClothingEyesEyepatch, BaseSpectralContraband]
+  parent: [ClothingHeadEyeBaseFlippable, BaseSpectralContraband]
   id: ClothingEyesSpectralEyepatch
   name: spectral eyepatch
   description: an eyepatch infused with the souls of the damned. Keeps your eyes very safe.
   components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Misc/eyepatch.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Misc/eyepatch.rsi
+  - type: EyeProtection
+    protectionTime: 5
   - type: FlashImmunity
+
+- type: entity
+  parent: [ClothingEyesSpectralEyepatch, ClothingHeadEyeBaseFlipped]
+  id: ClothingEyesSpectralEyepatchFlipped
+  suffix: flipped
