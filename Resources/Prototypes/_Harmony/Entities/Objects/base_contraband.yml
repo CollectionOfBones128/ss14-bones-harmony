@@ -1,0 +1,7 @@
+# Used by the Ghost Pirate
+- type: entity
+  id: BaseSpectralContraband
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Spectral
