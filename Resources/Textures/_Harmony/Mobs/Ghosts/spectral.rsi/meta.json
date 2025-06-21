@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Original Created by EmoGarbage at https://github.com/ss14-harmony/ss14-harmony/commit/075eb0d982ac7507169b5bb9f33e94bb7795c596, Recoloured by CollectionOfBones128 (GitHub)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "animated",
+            "directions": 4
+        },
+        {
+            "name": "head_m",
+            "directions": 4
+        }
+    ]
+}
