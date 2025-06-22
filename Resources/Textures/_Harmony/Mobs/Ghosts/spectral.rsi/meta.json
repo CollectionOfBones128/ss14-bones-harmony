@@ -13,10 +13,6 @@
         {
             "name": "animated",
             "directions": 4
-        },
-        {
-            "name": "head_m",
-            "directions": 4
         }
     ]
 }
