@@ -3,10 +3,11 @@
 - type: entity
   id: MobSpectralHumanoid
   parent:
-  - BaseSimpleMob
+  - BaseMob
+  - MobDamageable
+  - MobPolymorphable
   - FlyingMobBase # Ghosts Hover.
   - MobCombat
-  - MobAtmosExposed
   - MobFlammable
   - StripableInventoryBase
   suffix: ""
@@ -180,11 +181,17 @@
     damageCap: 400
     damage:
       types:
-        Heat: -1
-        Shock: -1
-        Caustic: -1
+        Heat: -0.2
+        Shock: -0.2
+        Caustic: -0.2
       groups:
-        Brute: -1
+        Brute: -0.6
+  - type: RotationVisuals
+    defaultRotation: 90
+    horizontalRotation: 90
+  - type: Tag
+    tags:
+    - DoorBumpOpener
 
 ## Spectral Pirate Ghost Role
 - type: entity
