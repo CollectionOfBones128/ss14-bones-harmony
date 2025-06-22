@@ -4,6 +4,7 @@
   id: MobSpectralHumanoid
   parent:
   - BaseSimpleMob
+  - FlyingMobBase # Ghosts Hover.
   - MobCombat
   - MobAtmosExposed
   - MobFlammable
@@ -11,6 +12,11 @@
   suffix: ""
   abstract: true
   components:
+  - type: NpcFactionMember
+    factions:
+    - SimpleNeutral
+  - type: NameIdentifier
+    group: GenericNumber
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -109,8 +115,8 @@
   - type: Climbing
   # - type: Cuffable
   # - type: Ensnareable
-    sprite: Objects/Misc/ensnare.rsi
-    state: icon
+    # sprite: Objects/Misc/ensnare.rsi
+    # state: icon
   - type: AnimationPlayer
   - type: Buckle
   - type: CombatMode
@@ -164,6 +170,21 @@
   - type: Damageable
     damageContainer: ManifestedSpirit
     damageModifierSet: ManifestedSpirit
+  - type: Flammable
+    damage:
+      types: {}
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    - Critical
+    damageCap: 400
+    damage:
+      types:
+        Heat: -1
+        Shock: -1
+        Caustic: -1
+      groups:
+        Brute: -1
 
 ## Spectral Pirate Ghost Role
 - type: entity
@@ -187,6 +208,20 @@
   - type: MobMover
   - type: InputMover
   - type: MovementSpeedModifier
+  - type: MobState
+  - type: MobStateActions
+    actions:
+      Critical:
+      - ActionCritSuccumb
+      - ActionCritLastWords
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Critical
+      250: Dead
   - type: PirateAccent
   - type: Loadout
     prototypes: [SpectralPirateGear]
+  - type: ActionGrant
+    actions:
+    - ActionPolymorphJauntII
