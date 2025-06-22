@@ -8,13 +8,14 @@
   - MobAtmosExposed
   - MobFlammable
   - StripableInventoryBase
+  suffix: ""
   abstract: true
   components:
   - type: Sprite
     drawdepth: Mobs
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: animated
+      state: full
       sprite: _Harmony/Mobs/Ghosts/spectral.rsi
     - map: [ "jumpsuit" ]
     - map: [ "gloves" ]
@@ -106,8 +107,8 @@
   - type: Internals
   - type: FloatingVisuals
   - type: Climbing
-  - type: Cuffable
-  - type: Ensnareable
+  # - type: Cuffable
+  # - type: Ensnareable
     sprite: Objects/Misc/ensnare.rsi
     state: icon
   - type: AnimationPlayer
@@ -129,16 +130,13 @@
   - type: Dna
   - type: MindContainer
     showExamineInfo: true
-  - type: CanEnterCryostorage
+  # - type: CanEnterCryostorage
   - type: InteractionPopup
     successChance: 1
     interactSuccessString: hugging-success-generic
     interactSuccessSound: /Audio/Effects/thudswoosh.ogg
     messagePerceivedByOthers: hugging-success-generic-others
   - type: CanHostGuardian
-  - type: NpcFactionMember
-    factions:
-    - NanoTrasen
   - type: CreamPied
   - type: Stripping
   - type: UserInterface
@@ -150,12 +148,13 @@
   - type: Puller
   - type: Speech
     speechSounds: Alto
-  - type: DamageForceSay
+  # - type: DamageForceSay
+  - type: ZombieImmune
   - type: Vocal
     sounds:
-      Male: MaleHuman
-      Female: FemaleHuman
-      Unsexed: MaleHuman
+      Male: Skeleton
+      Female: Skeleton
+      Unsexed: Skeleton
   - type: Emoting
   - type: BodyEmotes
     soundsId: GeneralBodyEmotes
@@ -174,12 +173,9 @@
   description: a pirate with unfinished business
   components:
   - type: GhostRole
-    allowMovement: true
-    allowSpeech: true
-    makeSentient: true
-    name: ghost-role-information-space-dragon-name
-    description: ghost-role-information-space-dragon-description
-    rules: ghost-role-information-space-dragon-rules
+    name: ghost-role-information-skeleton-pirate-name
+    description: ghost-role-information-skeleton-pirate-description
+    rules: ghost-role-information-freeagent-rules
     mindRoles:
     - MindRoleGhostRoleTeamAntagonist
     raffle:
@@ -192,3 +188,5 @@
   - type: InputMover
   - type: MovementSpeedModifier
   - type: PirateAccent
+  - type: Loadout
+    prototypes: [SpectralPirateGear]
