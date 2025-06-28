@@ -1,4 +1,4 @@
-# Ghost Pirate Antag
+# Damned Corsair Antag
 ## Base Spectral Humanoid
 - type: entity
   id: MobSpectralHumanoid
@@ -13,6 +13,7 @@
   suffix: ""
   abstract: true
   components:
+  - type: Spectral
   - type: NpcFactionMember
     factions:
     - SimpleNeutral
@@ -193,19 +194,19 @@
     tags:
     - DoorBumpOpener
 
-## Spectral Pirate Ghost Role
+## Damned Corsair Ghost Role
 - type: entity
-  id: MobSpectralPirate
+  id: MobDamnedCorsair
   parent: MobSpectralHumanoid
-  name: spectral pirate
-  description: a pirate with unfinished business
+  name: damned corsair
+  # description: A pirate with unfinished business
   components:
   - type: GhostRole
-    name: ghost-role-information-skeleton-pirate-name
-    description: ghost-role-information-skeleton-pirate-description
-    rules: ghost-role-information-freeagent-rules
+    name: ghost-role-information-damned-corsair-name
+    description: ghost-role-information-damned-corsair-description
+    rules: ghost-role-information-antagonist-rules
     mindRoles:
-    - MindRoleGhostRoleTeamAntagonist
+    - MindRoleGhostRoleSoloAntagonist
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -228,7 +229,7 @@
       250: Dead
   - type: PirateAccent
   - type: Loadout
-    prototypes: [SpectralPirateGear]
+    prototypes: [DamnedCorsairGear]
   - type: ActionGrant
     actions:
     - ActionPolymorphJauntII

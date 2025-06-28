@@ -33,11 +33,11 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitQM
 
-# Ghost Pirate Hardsuit
+# Damned Corsair Hardsuit
 - type: entity
   parent: [ ClothingOuterHardsuitBase, BaseSpectralContraband ]
-  id: ClothingOuterHardsuitSpectralPirate
-  name: pirate captain's spectral hardsuit
+  id: ClothingOuterHardsuitDamnedCorsair
+  name: corsair's spectral hardsuit
   description: An ancient spectral hardsuit, infused with the souls of the damned.
   components:
   - type: Sprite

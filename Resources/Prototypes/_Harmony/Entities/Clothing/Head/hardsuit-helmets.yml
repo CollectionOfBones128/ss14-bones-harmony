@@ -34,10 +34,10 @@
     highPressureMultiplier: 0.72
     lowPressureMultiplier: 1000
 
-# Ghost Pirate Hardsuit
+# Damned Corsair Hardsuit
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: ClothingHeadHelmetHardsuitSpectralPirate
+  id: ClothingHeadHelmetHardsuitDamnedCorsair
   name: pirate captain's spectral hardsuit helmet
   suffix: Pirate
   description: A spectral hardsuit helmet, made for the damned captain of a ghost ship.

@@ -63,11 +63,13 @@
   description: Skeletal knuckledusters infused with the souls of the damned.
   components:
   - type: MeleeWeapon
+    autoAttack: true
     attackRate: 3
     damage:
       types:
         Blunt: 8
         Cold: 4
+    angle: 30
     soundHit:
       collection: Punch
     animation: WeaponArcFist

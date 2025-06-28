@@ -1,13 +1,13 @@
 - type: antag
-  id: SpectralPirate
-  name: roles-antag-spectral-pirate-name
+  id: DamnedCorsair
+  name: roles-antag-damned-corsair-name
   antagonist: true
   setPreference: false
-  objective: roles-antag-spectral-pirate-objective
+  objective: roles-antag-damned-corsair-objective
 
-# Spectral Pirate Starting Gear
+# Damned Corsair Starting Gear
 - type: startingGear
-  id: SpectralPirateGear
+  id: DamnedCorsairGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitPirate
     back: ClothingBackpackSatchelLeather
