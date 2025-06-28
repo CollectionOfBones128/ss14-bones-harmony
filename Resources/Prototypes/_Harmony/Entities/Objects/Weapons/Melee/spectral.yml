@@ -24,9 +24,9 @@
   - type: Item
     sprite: Objects/Weapons/Melee/e_cutlass.rsi
 
-# Spectral Pike, Faster spear swing with lower damage per hit
+# Spectral Harpoon, Faster spear swing with lower damage per hit
 - type: entity
-  name: spectral pike
+  name: spectral harpoon
   parent: [BaseItem, BaseSpectralContraband]
   id: SpectralSpear
   description: A boarding pike infused with the souls of the damned.
