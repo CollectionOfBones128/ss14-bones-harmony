@@ -2,27 +2,28 @@
 # Spectral Cutlass, Slow wide swing with high damage per hit
 - type: entity
   name: spectral cutlass
-  parent: [BaseMeleeWeaponEnergy, BaseSpectralContraband]
+  parent: [BaseSword, BaseSpectralContraband]
   id: SpectralCutlass
   description: A cutlass infused with the souls of the damned.
   components:
-  - type: ItemToggleMeleeWeapon
-    activatedDamage:
-        types:
-            Slash: 16
-            Cold: 14
-    deactivatedSecret: true
   - type: Sprite
-    sprite: Objects/Weapons/Melee/e_cutlass.rsi
-    layers:
-      - state: e_cutlass
-      - state: e_cutlass_blade
-        color: blue
-        visible: false
-        shader: unshaded
-        map: [ "blade" ]
+    sprite: Objects/Weapons/Melee/cutlass.rsi
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 16
+        Cold: 14
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
   - type: Item
-    sprite: Objects/Weapons/Melee/e_cutlass.rsi
+    size: Ginormous
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - Pocket
+    - Belt
+  - type: DisarmMalus
+    malus: 0.9
 
 # Spectral Harpoon, Faster spear swing with lower damage per hit
 - type: entity
@@ -54,6 +55,8 @@
     slots:
     - back
     - suitStorage
+  - type: DisarmMalus
+    malus: 0.9
 
 # Boneclaws, Fast wide swing with low damage per hit
 - type: entity
