@@ -1,4 +1,5 @@
 # pickaxe that swings faster but has less dps
+
 - type: entity
   parent: BaseItem # Not parented from Pickaxe, as thats scrappable and this is tech unlocked
   id: PickaxeLight
@@ -38,11 +39,13 @@
   - type: UseDelay
 
 # reinforced pickaxe that swings fast
+
 - type: entity
   parent: PickaxeLight
   id: PickaxeUltralight
   name: ultralight pickaxe
   description: Light, sleek, reinforced with plasma! It's still made out of glass though...
+  components:
   - type: Sprite
     sprite: _Harmony/Objects/Weapons/Melee/pickaxe_ultralight.rsi
     state: pickaxe
