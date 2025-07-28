@@ -69,21 +69,24 @@
           paths:
           - /Maps/Ruins/abandoned_outpost.yml
           - /Maps/Ruins/atmos_interchange.yml
-          - /Maps/Ruins/chunked_tcomms.yml
+          # - /Maps/Ruins/chunked_tcomms.yml
           - /Maps/Ruins/biodome_satellite.yml
-          - /Maps/Ruins/derelict.yml
+          # - /Maps/Ruins/derelict.yml
           - /Maps/Ruins/djstation.yml
 #         - /Maps/Ruins/empty_flagship.yml # Harmony change - removes flagship wreck
           - /Maps/Ruins/hydro_outpost.yml
-          - /Maps/Ruins/old_ai_sat.yml
+          # - /Maps/Ruins/old_ai_sat.yml
           - /Maps/Ruins/ruined_prison_ship.yml
           - /Maps/Ruins/syndicate_dropship.yml
-          - /Maps/Ruins/whiteship_ancient.yml
+          # - /Maps/Ruins/whiteship_ancient.yml
           - /Maps/Ruins/whiteship_bluespacejumper.yml
           - /Maps/Ruins/wrecklaimer.yml
           - /Maps/Ruins/displaced_telescience.yml
           - /Maps/_Harmony/Ruins/whiteship_heavysalvage.yml # Harmony Change - Ports NT Heavy Salvage Vessel Whiteship from SS13
           - /Maps/_Harmony/Ruins/ship_railgun.yml # Harmony Change - adds reimagined flagship wreck
+          - /Maps/_Harmony/Ruins/chunked_relay.yml # Reimagined chunked tcomms
+          - /Maps/_Harmony/Ruins/old_syndicate_satellite.yml # Reimagined Old AI Sat
+          - /Maps/_Harmony/Ruins/whiteship_ghost.yml # Reimagined Whiteship Ancient
         wrecks: !type:DungeonSpawnGroup
           minimumDistance: 150
           maximumDistance: 300
