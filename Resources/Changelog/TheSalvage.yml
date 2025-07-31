@@ -36,6 +36,8 @@ Entries:
         message: Adds a new ruin, Chunked Relay, its a reimagining of Chunked TComms
       - type: Add
         message: Adds a new Ruin, Whiteship Ghost, its a reimagining of Whiteship Ancient
+      - type: Tweak
+        message: More ruins can now spawn per round, randomly chosen between 2 and 4. This is mainly for testing purposes.
   - id: 7
     author: CollectionOfBones128
     time: '2025-07-17T17:01:37.0000000+00:00'
