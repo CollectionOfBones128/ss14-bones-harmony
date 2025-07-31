@@ -18,8 +18,8 @@ public sealed partial class SalvageSystem
 
     [ValidatePrototypeId<RadioChannelPrototype>]
     // Harmony Change Start - Adds Salvage Comms
-    // private const string MagnetChannel = "Supply";
-    private const string MagnetChannel = "Salvage";
+    // private static readonly ProtoId<RadioChannelPrototype> MagnetChannel = "Supply";
+    private static readonly ProtoId<RadioChannelPrototype> MagnetChannel = "Salvage";
     // Harmony Change Ends
 
     private EntityQuery<SalvageMobRestrictionsComponent> _salvMobQuery;
