@@ -1,0 +1,112 @@
+Entries:
+  - id: 1
+    author: BlueMoon059
+    time: '2025-07-17T17:01:37.0000000+00:00'
+    url: https://github.com/ss14-harmony/ss14-harmony/pull/788
+    changes:
+      - type: Tweak
+        message: Made coins scrappable again.
+  - id: 2
+    author: BlueMoon059
+    time: '2025-07-17T17:01:37.0000000+00:00'
+    url: github.com/ss14-harmony/ss14-harmony/pull/771
+    changes:
+      - type: Tweak
+        message: Re-added Salvage equipment to the Debris and VGroid loot pools.
+  - id: 3
+    author: CollectionOfBones128
+    time: '2025-07-17T17:01:37.0000000+00:00'
+    url: https://github.com/ss14-harmony/ss14-harmony/pull/817
+    changes:
+      - type: Add
+        message: Adds a new ruin, the Railgun Ship, a reimagining of the removed Flagship ruin
+  - id: 4
+    author: CollectionOfBones128
+    time: '2025-07-17T17:01:37.0000000+00:00'
+    url: https://github.com/ss14-harmony/ss14-harmony/pull/829
+    changes:
+      - type: Add
+        message: Adds a new Ruin, the NT Heavy Salvage Vessel
+  - id: 5
+    author: CollectionOfBones128
+    time: '2025-07-17T17:01:37.0000000+00:00'
+    url: https://github.com/CollectionOfBones128/ss14-bones-harmony/tree/TheSalvage
+    changes:
+      - type: Add
+        message: Adds a new ruin, Chunked Relay, its a reimagining of Chunked TComms
+      - type: Add
+        message: Adds a new Ruin, Whiteship Ghost, its a reimagining of Whiteship Ancient
+  - id: 7
+    author: CollectionOfBones128
+    time: '2025-07-17T17:01:37.0000000+00:00'
+    url: https://github.com/ss14-harmony/ss14-harmony/pull/835
+    changes:
+      - type: Add
+        message: Adds two new Pickaxes that Science can research and print.
+  - id: 8
+    author: CollectionOfBones128
+    time: '2025-07-17T17:01:37.0000000+00:00'
+    url: https://github.com/ss14-harmony/ss14-harmony/pull/840
+    changes:
+      - type: Fix
+        message: Fixed the random space corpses not having clothes when they were supposed to resemble specific jobs.
+      - type: Fix
+        message: Fixed oversight that made an N1984 sometimes spawn on random space corpses.
+  - id: 9
+    author: CollectionOfBones128
+    time: '2025-07-17T17:01:37.0000000+00:00'
+    url: https://github.com/ss14-harmony/ss14-harmony/pull/853
+    changes:
+      - type: Tweak
+        message: Reverts Jetpack Acceleration nerf.
+  - id: 10
+    author: CollectionOfBones128
+    time: '2025-07-17T17:01:37.0000000+00:00'
+    url: https://github.com/ss14-harmony/ss14-harmony/pull/859
+    changes:
+      - type: Add
+        message: Added the blip system, allowing objects to appear as dots on the mass scanner
+      - type: Tweak
+        message: Jetpacks now show up on the mass scanner as blips
+      - type: Tweak
+        message: the handheld GPS now appears on the mass scanner as blips
+      - type: Tweak
+        message: Nuclear Operative Jetpacks, Ninja Jetpacks, and Bloodred magboots don't show up as blips
+  - id: 11
+    author: CollectionOfBones128
+    time: '2025-07-17T17:01:37.0000000+00:00'
+    url: https://github.com/ss14-harmony/ss14-harmony/pull/861
+    changes:
+      - type: Tweak
+        message: All rocks now drop ore. The VGRoids Ironrock drops better ore.
+      - type: Add
+        message: Adds a new item, the Geode. It can spawn while mining and sells for a good bit
+      - type: Add
+        message: Adds a new item, the Buried Cache. It can spawn rarely while mining and can be opened for treasure.
+  - id: 12
+    author: CollectionOfBones128
+    time: '2025-07-17T17:01:37.0000000+00:00'
+    url: https://github.com/ss14-harmony/ss14-harmony/pull/891
+    changes:
+      - type: Tweak
+        message: the salvage mining hardsuit is now faster.
+  - id: 13
+    author: CollectionOfBones128
+    time: '2025-07-17T17:01:37.0000000+00:00'
+    url: https://github.com/ss14-harmony/ss14-harmony/pull/902
+    changes:
+      - type: Add
+        message: Added a new comms channel for Salvage
+      - type: Tweak
+        message: Salvagers now start with mining headsets
+      - type: Tweak
+        message: Salvager's handheld radios have been replaced with mining radios that broadcast over Salvage Comms
+  - id: 14
+    author: CollectionOfBones128
+    time: '2025-07-17T17:01:37.0000000+00:00'
+    url: https://github.com/CollectionOfBones128/ss14-bones-harmony/tree/RevertSalvDmgReduction
+    changes:
+      - type: Tweak
+        message: Most salvage enemies have had their HP unreduced
+      - type: Tweak
+        message: Most salvage weapons have had their damage unreduced
