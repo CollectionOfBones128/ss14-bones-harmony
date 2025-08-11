@@ -8,10 +8,12 @@
     - Diona
     - Dwarf
     - Human
+    - IPC # Harmony Change
     - Moth
     - Reptilian
     - SlimePerson
     - Vox
+
 
 - type: guideEntry
   id: Arachnid

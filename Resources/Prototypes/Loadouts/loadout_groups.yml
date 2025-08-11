@@ -100,6 +100,7 @@
   - EmergencyNitrogen
   - EmergencyOxygen
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyIPCBox # Harmony Change, Port DeltaV IPCs
 
 # nitrogen or oxygen tank, depending on what your species needs
 - type: loadoutGroup
@@ -529,6 +530,7 @@
   - EmergencyNitrogenClown
   - EmergencyOxygenClown
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyIPCBox # Harmony Change, Port DeltaV IPCs
 
 - type: loadoutGroup
   id: MimeHead
@@ -586,6 +588,7 @@
   - EmergencyOxygenMime
   - EmergencySpeciesMothMime
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyIPCBox # Harmony Change, Port DeltaV IPCs
 
 - type: loadoutGroup
   id: MusicianJumpsuit
@@ -882,6 +885,7 @@
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyIPCBox # Harmony Change, Port DeltaV IPCs
 
 # Science
 - type: loadoutGroup
@@ -1167,7 +1171,7 @@
   - DetectiveBlueCoatHarmony # Harmony
   - DetectiveBomberCoatHarmony # Harmony
   - DetectiveDiscoCoatHarmony # Harmony
- 
+
 - type: loadoutGroup
   id: SecurityCadetJumpsuit
   name: loadout-group-security-cadet-jumpsuit
@@ -1184,6 +1188,7 @@
   - EmergencyNitrogenSecurity
   - EmergencyOxygenSecurity
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyIPCBox # Harmony Change, Port DeltaV IPCs
 
 - type: loadoutGroup
   id: SecurityStar
@@ -1387,6 +1392,7 @@
   - EmergencyNitrogenMedical
   - EmergencyOxygenMedical
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyIPCBox # Harmony Change, Port DeltaV IPCs
 
 # Wildcards
 - type: loadoutGroup
@@ -1429,6 +1435,7 @@
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyIPCBox # Harmony Change, Port DeltaV IPCs
 
 - type: loadoutGroup
   id: GroupSpeciesBreathTool
