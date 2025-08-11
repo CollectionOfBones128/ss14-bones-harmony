@@ -255,11 +255,6 @@ binds:
   type: State
   key: E
   mod1: Shift
-# Start harmony change - Smart back equip goob port
-- function: SmartEquipBack
-  type: State
-  key: F
-# End harmony change
 - function: OpenBackpack
   type: State
   key: V
