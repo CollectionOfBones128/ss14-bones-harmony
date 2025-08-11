@@ -1,0 +1,27 @@
+- type: entity
+  parent: WeaponWandBase
+  id: WeaponWandNarcomancyHarmony
+  name: wand of narcomancy
+  description: Even wizards need their fix.
+  components:
+  - type: Sprite
+    sprite: _Harmony/Objects/Weapons/Guns/Basic/wand_narcomancy.rsi
+    layers:
+    - state: icon
+      map: [ "base" ]
+    - state: icon-effect
+      map: [ "effect" ]
+  - type: Item
+    size: Normal
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Items/hypospray.ogg
+  - type: BasicEntityAmmoProvider
+    proto: ProjectileDrugBoltHarmony
+    capacity: 10
+    count: 10
