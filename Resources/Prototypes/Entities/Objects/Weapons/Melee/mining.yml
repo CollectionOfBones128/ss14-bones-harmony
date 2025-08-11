@@ -106,7 +106,7 @@
     enabled: false
     radius: 4
 
-# Very high burst damage if you land a mark, while also providing a small amount of healing.
+# Very high burst damage if you land a mark, while also providing a small amount of healing. # Reverted.
 - type: entity
   parent: [BaseWeaponCrusher, BaseSecurityCargoContraband]
   id: WeaponCrusher
@@ -133,7 +133,7 @@
   - type: LeechOnMarker
     leech:
       groups:
-        Brute: -6
+        Brute: -10 # Harmony Change, -6 > -10, Reverts WizDen 38131
   - type: Gun
     soundGunshot: /Audio/Weapons/plasma_cutter.ogg
     fireRate: 1
@@ -147,20 +147,20 @@
     capacity: 1
     count: 1
   - type: MeleeWeapon
-    attackRate: 1
+    attackRate: 1.5 # Harmony Change, 1 > 1.5, Reverts WizDen 38131
     wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 6
-        Slash: 4
+        Blunt: 10 # Harmony Change, 6 > 10, Reverts WizDen 38131
+        Slash: 5 # Harmony Change, 4 > 5, Reverts WizDen 38131
     soundHit:
       collection: MetalThud
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 6
-        Slash: 2
+        Blunt: 2.5 # Harmony Change, 6 > 2.5, Reverts WizDen 38131
+        Slash: 2.5 # Harmony Change, 2 > 2.5, Reverts WizDen 38131
         Structural: 30
   - type: GunRequiresWield
   - type: DisarmMalus
@@ -211,12 +211,12 @@
         restitution: 0.3
         friction: 0.2
 
-# Less mark damage in exchange for more healing. Also has a better ratio of blunt to slash damage, but less structural.
+# Less mark damage in exchange for more healing. Also has a better ratio of blunt to slash damage, but less structural. # Reverted.
 - type: entity
   parent: [ WeaponCrusher, BaseSecurityCargoContraband]
   id: WeaponCrusherGlaive
   name: crusher glaive
-  description: An early design of the proto-kinetic accelerator, in glaive form. Provides better healing in exchange for less charged damage.
+  description: An early design of the proto-kinetic accelerator, in glaive form. # Harmony Change, removed "Provides better healing in exchange for less charged damage."
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/crusher_glaive.rsi
@@ -232,10 +232,12 @@
     - suitStorage
   - type: UseDelay
     delay: 1.9
-  - type: BasicEntityAmmoProvider
-    proto: BulletChargeGlaive
-    capacity: 1
-    count: 1
+# Harmony Change Start, Reverts WizDen 38131
+  # - type: BasicEntityAmmoProvider
+    # proto: BulletChargeGlaive
+    # capacity: 1
+    # count: 1
+# Harmony Change Ends
   - type: LeechOnMarker
     leech:
       groups:
@@ -244,15 +246,17 @@
     tags:
       - Pickaxe
   - type: MeleeWeapon
-    attackRate: 1
-    wideAnimationRotation: -135
-    damage:
-      types:
-        Blunt: 3
-        Slash: 7
-  - type: IncreaseDamageOnWield
-    damage:
-      types:
-        Blunt: 2
-        Slash: 6
-        Structural: 20
+# Harmony Change Start, Reverts WizDen 38131
+    # attackRate: 1
+    # wideAnimationRotation: -135
+    # damage:
+      # types:
+        # Blunt: 3
+        # Slash: 7
+  # - type: IncreaseDamageOnWield
+    # damage:
+      # types:
+        # Blunt: 2
+        # Slash: 6
+        # Structural: 20
+# Harmony Change Ends

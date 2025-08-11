@@ -529,7 +529,7 @@
     impactEffect: BulletImpactEffectKinetic
     damage:
       types:
-        Blunt: 15
+        Blunt: 25 # Harmony Change, 15 > 25, Reverts WizDen 38131
         Structural: 30
   # Short lifespan
   - type: TimedDespawn
@@ -597,20 +597,22 @@
   - type: TimedDespawn
     lifetime: 0.4
 
+# Harmony Change Start, Reverts WizDen 38131
   # Deals less damage, glaive has better HP recovery
-- type: entity
-  id: BulletChargeGlaive
-  name: leech bolt
-  parent: BulletCharge
-  components:
-  - type: DamageMarkerOnCollide
-    whitelist:
-      components:
-        - MobState
-    damage:
-      types:
-        Blunt: 1
-        Slash: 5
+# - type: entity
+  # id: BulletChargeGlaive
+  # name: leech bolt
+  # parent: BulletCharge
+  # components:
+  # - type: DamageMarkerOnCollide
+    # whitelist:
+      # components:
+        # - MobState
+    # damage:
+      # types:
+        # Blunt: 1
+        # Slash: 5
+# Harmony Change End
 
 - type: entity
   parent: BaseBullet
