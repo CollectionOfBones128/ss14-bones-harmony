@@ -27,7 +27,9 @@
     SodiumHydroxide:
       amount: 1
   products:
-    EthyleneGlycol: 1- type: reaction
+    EthyleneGlycol: 1
+
+- type: reaction
   id: UnstableMutagenTritiumAlt
   reactants:
     Tritium:
