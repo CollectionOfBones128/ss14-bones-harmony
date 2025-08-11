@@ -145,7 +145,7 @@
       - !type:HealthChange # Harmony Change - EvenHealthChange > HealthChange - Reverts advanced chem rework
         damage:
 # Start Harmony change - Reverts advanced chem rework
-          groups: 
+          groups:
             Brute: -2 # -1.5 > -2
 # End Harmony change
       - !type:HealthChange
@@ -784,15 +784,16 @@
   color: "#ba7d7d"
   metabolisms:
     Medicine:
+      metabolismRate: 0.2 # Harmony Change, roughly halves the rate of tranex, gives it more applications
       effects:
       # Medium-large quantities can hurt you instead,
       # but still technically stop your bleeding.
       - !type:ModifyBleedAmount
-        amount: -1.5
+        amount: -2 # Harmony Change, buffs Tranex
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 15
+          min: 20 # Harmony Change, Increased to compensate for reduced Metabolism
         damage:
           types:
             Bloodloss: 3
@@ -1074,10 +1075,14 @@
     Medicine:
       # metabolismRate: 0.1 # Harmony - Revert Advanced Chem Change
       effects:
+# Harmony Change Start, reintroduce Punct cauterizing wounds without relying on a bug
+      - !type:ModifyBleedAmount
+        amount: -0.5
+# Harmony Change End
       - !type:HealthChange
         damage:
           types:
-            Piercing: -4 # Harmony - -0.6 > -4 - Revert Advanced Chem Change
+            Piercing: -3 # Harmony Change, Nerfs Punct - -0.6 > -3
             Blunt: 0.1 # Harmony - 0.05 > 0.1 - Revert Advanced Chem Change
       - !type:HealthChange
         conditions:
