@@ -72,6 +72,7 @@
   - type: Tag
     tags:
     - Ring
+  - type: Engraveable  #Harmony change - adds engraveable component.
 
 - type: entity
   abstract: true

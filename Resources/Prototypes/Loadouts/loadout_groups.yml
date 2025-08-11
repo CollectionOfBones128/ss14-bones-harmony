@@ -73,6 +73,7 @@
   - GoldRing # Harmony
   - Cane # Harmony
   - TapeRecorder # DeltaV / Harmony
+  - CDDogtags #CD / Harmony
 
 - type: loadoutGroup
   id: Glasses

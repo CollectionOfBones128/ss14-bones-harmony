@@ -1,0 +1,20 @@
+- type: entity
+  parent: BaseItem
+  id: CDDogtags
+  name: dogtags
+  suffix: Harmony
+  description: A set of dogtags, hanging from a small piece of cord for wearing and carrying.
+  components:
+  - type: Sprite
+    sprite: _CD/Objects/Misc/dogtags.rsi
+    layers:
+    - state: dogtag
+  - type: Clothing
+    sprite: _CD/Objects/Misc/dogtags.rsi
+    slots:
+    - neck
+  - type: Appearance
+  - type: Engraveable
+    noEngravingText: "engraving-dogtags-no-message"
+    engraveSuccessMessage: "engraving-dogtags-succeed"
+    hasEngravingText: "engraving-dogtags-has-message"

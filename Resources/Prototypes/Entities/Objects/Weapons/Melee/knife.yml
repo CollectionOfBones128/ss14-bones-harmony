@@ -27,6 +27,7 @@
       - Slicing
     useSound:
       path: /Audio/Items/Culinary/chop.ogg
+  - type: Engraveable  #Harmony change - adds Engraveable Component
 
 - type: entity
   name: kitchen knife

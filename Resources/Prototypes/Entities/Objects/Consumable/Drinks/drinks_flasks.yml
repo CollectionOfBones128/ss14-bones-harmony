@@ -15,6 +15,7 @@
       Steel: 300
   - type: FitsInDispenser
     solution: drink
+  - type: Engraveable  #Harmony change - adds Engraveable Component
 
 - type: entity
   id: DrinkFlaskVisualsOpenable

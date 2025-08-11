@@ -49,3 +49,4 @@
     - Belt
   - type: UseDelay
     delay: 1
+  - type: Engraveable  #Harmony change - adds Engraveable Component

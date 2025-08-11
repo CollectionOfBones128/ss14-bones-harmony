@@ -67,6 +67,7 @@
   - type: Appearance
   - type: StaticPrice
     price: 500
+  - type: Engraveable  #Harmony change - adds Engraveable Component
 
 - type: entity
   name: viper
