@@ -14,6 +14,12 @@
       noRot: true
       layers:
         - state: grey
+        # Harmony Change Start - Allow Labels
+        - state: paper
+          sprite: _Harmony/Structures/Storage/Labels/canister.rsi
+          visible: false
+          map: ["enum.PaperLabelVisuals.Layer"]
+        # Harmony Change End
     - type: Appearance
     - type: GenericVisualizer
       visuals:
@@ -35,6 +41,17 @@
             1: { state: can-o1, shader: "unshaded" }
             2: { state: can-o2, shader: "unshaded" }
             3: { state: can-o3, shader: "unshaded" }
+        # Harmony Change Start - Allow Labels
+        enum.PaperLabelVisuals.HasLabel:
+          enum.PaperLabelVisuals.Layer:
+            True: { visible: true }
+            False: { visible: false }
+        enum.PaperLabelVisuals.LabelType:
+          enum.PaperLabelVisuals.Layer:
+            Paper: { state: paper }
+            Bounty: { state: bounty }
+            Invoice: { state: invoice }
+        # Harmony Change End
     - type: ActivatableUI
       key: enum.GasCanisterUiKey.Key
     - type: ActivatableUIRequiresLock
@@ -87,6 +104,7 @@
     - type: ContainerContainer
       containers:
         tank_slot: !type:ContainerSlot {}
+        paper_label: !type:ContainerSlot # Harmony Change - Adds labels
     - type: NodeContainer
       nodes:
         port:
@@ -114,6 +132,16 @@
       - GasCanisters
     - type: Paintable
       group: Canisters
+    - type: PaperLabel # Harmony Change - Allow Labels
+      labelSlot:
+        insertVerbText: comp-paper-label-insert
+        ejectVerbText: comp-paper-label-eject
+        whitelist:
+          components:
+          - Paper
+        blacklist:
+          tags:
+          - Book
 
 - type: entity
   parent: GasCanister
