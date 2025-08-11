@@ -5,9 +5,17 @@
   description: A robust bag for salvage specialists and miners alike to carry large amounts of ore. Magnetises any nearby ores when attached to a belt.
   components:
   - type: MagnetPickup
+    magnetEnabled: false # Frontier, determines if it is enabled
+    magnetCanBeEnabled: false # Frontier, determines if it SHOULD be enabled
   - type: Sprite
     sprite: Objects/Specific/Mining/ore_bag.rsi
+    # Frontier: layered sprite
+#    layers:
     state: icon
+#    - state: icon-on
+#      visible: False
+#      map: [ "enum.ToggleVisuals.Layer" ]
+    # End Frontier
   - type: Clothing
     sprite: Objects/Specific/Mining/ore_bag.rsi
     quickEquip: false
@@ -23,9 +31,30 @@
     areaInsert: true
     whitelist:
       tags:
-        - ArtifactFragment
-        - Ore
+      - ArtifactFragment
+      - Ore
   - type: Dumpable
+  # Begin DeltaV Additions: toggle magnet from White Dream
+  - type: ItemToggle
+    soundActivate: &soundActivate
+      collection: sparks
+      params:
+        variation: 0.25
+    soundDeactivate: *soundActivate
+    onUse: false # Triggers the primary interact
+    onAltUse: true # Triggers the alt interact
+    onActivate: false # Triggers the click interact
+  - type: ItemToggleExamine
+    on: item-toggle-examine-magnet-on
+    off: item-toggle-examine-magnet-off
+#  - type: Appearance
+#  - type: GenericVisualizer
+#    visuals:
+#      enum.ToggleVisuals.Toggled:
+#        enum.ToggleVisuals.Layer:
+#          True: { visible: True }
+#          False: { visible: False }
+  # End DeltaV Additions
 
 - type: entity
   parent: OreBag
@@ -33,6 +62,6 @@
   name: integrated ore bag
   description: A large ore bag built into the frame of a mining cyborg.
   components:
-    - type: Storage
-      grid:
-      - 0,0,9,5
+  - type: Storage
+    grid:
+    - 0,0,9,5
