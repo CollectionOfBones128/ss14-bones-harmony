@@ -8,7 +8,8 @@
     },
     "states": [
         {
-            "name": "paper"
+            "name": "paper",
+            "directions": 4
         }
     ]
 }

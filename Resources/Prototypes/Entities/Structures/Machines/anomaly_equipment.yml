@@ -18,6 +18,12 @@
       map: ["enum.AnomalyVesselVisualLayers.Base"]
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    # Harmony Change Start - Allow Labels
+    - state: paper
+      sprite: _Harmony/Structures/Machines/Anomaly/Labels/vessel.rsi
+      visible: false
+      map: ["enum.PaperLabelVisuals.Layer"]
+    # Harmony Change End
   - type: Transform
     noRot: false
   - type: AnomalyVessel
@@ -66,6 +72,12 @@
         enum.WiresVisualLayers.MaintenancePanel:
           True: { visible: false }
           False: { visible: true }
+      # Harmony Change Start - Adds labels
+      enum.PaperLabelVisuals.HasLabel:
+        enum.PaperLabelVisuals.Layer:
+          True: { visible: true }
+          False: { visible: false }
+      # Harmony Change End
   - type: Explosive
     explosionType: Default
     maxIntensity: 20
@@ -87,6 +99,16 @@
   - type: GuideHelp
     guides:
     - ScannersAndVessels
+  - type: PaperLabel # Harmony Change - Allow Labels
+    labelSlot:
+      insertVerbText: comp-paper-label-insert
+      ejectVerbText: comp-paper-label-eject
+      whitelist:
+        components:
+        - Paper
+      blacklist:
+        tags:
+        - Book
 
 - type: entity
   id: MachineAnomalyVesselExperimental
@@ -98,6 +120,25 @@
     sprite: Structures/Machines/Anomaly/adv_anomaly_vessel.rsi
     offset: 0,0.5
     drawdepth: Mobs
+    layers:
+    # Harmony Change Start - Allow Labels
+    ## Readding broken layers
+    - state: base
+    - state: powered-1
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: anomaly-1
+      visible: false
+      shader: unshaded
+      map: ["enum.AnomalyVesselVisualLayers.Base"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    ## Adding Paper Layers
+    - state: paper
+      sprite: _Harmony/Structures/Machines/Anomaly/Labels/experimental_vessel.rsi
+      visible: false
+      map: ["enum.PaperLabelVisuals.Layer"]
+    # Harmony Change End
   - type: SpriteFade
   - type: AnomalyVessel
     pointMultiplier: 2

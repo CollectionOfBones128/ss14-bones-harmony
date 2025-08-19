@@ -20,6 +20,12 @@
       visible: false
       map: ["enum.MorgueVisualLayers.Light"]
       shader: unshaded
+    # Harmony Change Start - Allow Labels
+    - state: paper
+      sprite: _Harmony/Structures/Storage/Labels/morgue.rsi
+      visible: false
+      map: ["enum.PaperLabelVisuals.Layer"]
+    # Harmony Change End
   - type: Clickable
   - type: InteractionOutline
   - type: Physics
@@ -68,11 +74,27 @@
           HasContents: {visible: true, state: morgue_nomob_light}
           HasMob: {visible: true, state: morgue_nosoul_light}
           HasSoul: {visible: true, state: morgue_soul_light}
+      # Harmony Change Start - Adds labels
+      enum.PaperLabelVisuals.HasLabel:
+        enum.PaperLabelVisuals.Layer:
+          True: { visible: true }
+          False: { visible: false }
+      # Harmony Change End
   - type: Transform
     anchored: true
   - type: AntiRottingContainer
   - type: StaticPrice
     price: 200
+  - type: PaperLabel # Harmony Change - Allow Labels
+    labelSlot:
+      insertVerbText: comp-paper-label-insert
+      ejectVerbText: comp-paper-label-eject
+      whitelist:
+        components:
+        - Paper
+      blacklist:
+        tags:
+        - Book
 
 - type: entity
   id: Crematorium

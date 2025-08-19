@@ -151,6 +151,12 @@
     - type: Sprite
       layers:
         - state: yellow
+        # Harmony Change Start - Allow Labels
+        - state: paper
+          sprite: _Harmony/Structures/Storage/Labels/canister.rsi
+          visible: false
+          map: ["enum.PaperLabelVisuals.Layer"]
+        # Harmony Change End
     - type: GasCanister
       gasMixture:
         volume: 1500
@@ -200,6 +206,12 @@
   - type: Sprite
     layers:
       - state: grey
+      # Harmony Change Start - Allow Labels
+      - state: paper
+        sprite: _Harmony/Structures/Storage/Labels/canister.rsi
+        visible: false
+        map: ["enum.PaperLabelVisuals.Layer"]
+      # Harmony Change End
   - type: GasCanister
     gasMixture:
       volume: 1500
@@ -240,6 +252,12 @@
   - type: Sprite
     layers:
       - state: blue
+      # Harmony Change Start - Allow Labels
+      - state: paper
+        sprite: _Harmony/Structures/Storage/Labels/canister.rsi
+        visible: false
+        map: ["enum.PaperLabelVisuals.Layer"]
+      # Harmony Change End
   - type: GasCanister
     gasMixture:
       volume: 1500
@@ -294,6 +312,12 @@
     - type: Sprite
       layers:
         - state: red
+        # Harmony Change Start - Allow Labels
+        - state: paper
+          sprite: _Harmony/Structures/Storage/Labels/canister.rsi
+          visible: false
+          map: ["enum.PaperLabelVisuals.Layer"]
+        # Harmony Change End
     - type: GasCanister
       gasMixture:
         volume: 1500
@@ -350,6 +374,12 @@
     - type: Sprite
       layers:
         - state: black
+        # Harmony Change Start - Allow Labels
+        - state: paper
+          sprite: _Harmony/Structures/Storage/Labels/canister.rsi
+          visible: false
+          map: ["enum.PaperLabelVisuals.Layer"]
+        # Harmony Change End
     - type: GasCanister
       gasMixture:
         volume: 1500
@@ -410,6 +440,12 @@
     - type: Sprite
       layers:
         - state: orange
+        # Harmony Change Start - Allow Labels
+        - state: paper
+          sprite: _Harmony/Structures/Storage/Labels/canister.rsi
+          visible: false
+          map: ["enum.PaperLabelVisuals.Layer"]
+        # Harmony Change End
     - type: GasCanister
       gasMixture:
         volume: 1500
@@ -454,6 +490,12 @@
     - type: Sprite
       layers:
         - state: green
+        # Harmony Change Start - Allow Labels
+        - state: paper
+          sprite: _Harmony/Structures/Storage/Labels/canister.rsi
+          visible: false
+          map: ["enum.PaperLabelVisuals.Layer"]
+        # Harmony Change End
     - type: GasCanister
       gasMixture:
         volume: 1500
@@ -499,6 +541,12 @@
     - type: Sprite
       layers:
         - state: water_vapor
+        # Harmony Change Start - Allow Labels
+        - state: paper
+          sprite: _Harmony/Structures/Storage/Labels/canister.rsi
+          visible: false
+          map: ["enum.PaperLabelVisuals.Layer"]
+        # Harmony Change End
     - type: GasCanister
       gasMixture:
         volume: 1500
@@ -543,6 +591,12 @@
     - type: Sprite
       layers:
         - state: greenys
+        # Harmony Change Start - Allow Labels
+        - state: paper
+          sprite: _Harmony/Structures/Storage/Labels/canister.rsi
+          visible: false
+          map: ["enum.PaperLabelVisuals.Layer"]
+        # Harmony Change End
     - type: GasCanister
       gasMixture:
         volume: 1500
@@ -590,6 +644,12 @@
     - type: Sprite
       layers:
         - state: redws
+        # Harmony Change Start - Allow Labels
+        - state: paper
+          sprite: _Harmony/Structures/Storage/Labels/canister.rsi
+          visible: false
+          map: ["enum.PaperLabelVisuals.Layer"]
+        # Harmony Change End
     - type: GasCanister
       gasMixture:
         volume: 1500
@@ -638,6 +698,12 @@
   - type: Sprite
     layers:
     - state: frezon
+    # Harmony Change Start - Allow Labels
+    - state: paper
+      sprite: _Harmony/Structures/Storage/Labels/canister.rsi
+      visible: false
+      map: ["enum.PaperLabelVisuals.Layer"]
+    # Harmony Change End
   - type: GasCanister
     gasMixture:
       volume: 1500
