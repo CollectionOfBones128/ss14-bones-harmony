@@ -120,8 +120,8 @@
     sprite: Structures/Machines/Anomaly/adv_anomaly_vessel.rsi
     offset: 0,0.5
     drawdepth: Mobs
-    layers:
     # Harmony Change Start - Allow Labels
+    layers:
     ## Readding broken layers
     - state: base
     - state: powered-1
